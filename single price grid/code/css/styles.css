@@ -1,0 +1,137 @@
+::after,
+::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 1rem;
+    height: 100%;
+}
+
+
+body{
+    box-sizing: border-box;
+    height: 100%;
+    text-align: left;
+    font-family: 'karla';
+    background-color: #f4f9f9;
+}
+
+.parent{
+    margin: 0 auto;
+    padding: 100px 20px;
+    max-width: 375px;
+    border-radius: 8px;
+}
+
+.parent div{
+    padding: 15px 40px 10px 40px;
+}
+
+.first_box{
+    background-color: white;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+}
+
+.second_box{
+    background-color: #65c7d8;
+
+}
+
+.third_box{
+    background-color: #0bc9eb;
+}
+
+.one{
+    color:#51c2d5 ;
+    width: 350px;
+}
+
+.two{
+    color: #c0e218;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.three{
+    color:#d1e3d4;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.sec_h3{
+    color: white;
+    font-size: 1rem;
+    
+}
+
+button{
+    padding-bottom: 20px;
+}
+
+
+.span1{
+    color: white;
+    font-size: 2rem;
+}
+
+.span2{
+    color: #d4e2d4;
+    padding: 10px;
+    font-size: .800rem;
+}
+
+.sec_box_h6{
+    color: white;
+    font-size: 1rem;
+}
+
+.th_h3{
+    color: white;
+    font-size: 1.1rem;
+    
+}
+
+
+.third_box h6{
+    color: white;
+    font-size: .750rem;
+    font-weight: 400;
+    opacity: 50%;
+}
+
+@media screen and (min-width:992px) {
+
+	.parent {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas:
+			'first_box first_box'
+			'second_box third_box';
+		margin: 10px auto;
+		padding: 70px 250px;
+		max-width: 1080px;
+	}
+
+
+	.first_box {
+		grid-area: first_box;
+	}
+
+
+
+	.second_box{
+		grid-area: second_box;
+		border-bottom-left-radius: 8px;
+	}
+
+	.third_box {
+		grid-area: third_box;
+		border-bottom-left-radius: 0;
+	}
+
+}
